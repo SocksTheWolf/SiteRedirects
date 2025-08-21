@@ -1,0 +1,13 @@
+name = "siteredirects"
+main = "worker.js"
+compatibility_date = "2025-08-21"
+preview_urls = false
+send_metrics = false
+workers_dev = false
+
+[[kv_namespaces]]
+binding = "REDIRECTS"
+id = "e68d94dae43b4c20bd3b87489e717d14"
+
+[vars]
+FALLBACK_URL = "https://twitch.tv/socksthewolf"
