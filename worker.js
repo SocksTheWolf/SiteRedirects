@@ -12,6 +12,6 @@ export default {
     // write the fallback url if location is not null
     location ??= env.FALLBACK_URL;
 
-    return Response.redirect(location, 302);
+    return Response.redirect(location, 301);
   },
 };
