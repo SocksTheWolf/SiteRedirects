@@ -6,7 +6,13 @@ This is to alleviate the 10 URL redirect rules limit on CF.
 
 ## Setup
 
-Clone this repository, change the value of your KV id as well as the variable value of `FALLBACK_URL`.
+### Automatically
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/socksthewolf/SiteRedirects)
+
+### Manually
+
+Clone this repository/use as template, change the value of your KV id as well as the variable value of `FALLBACK_URL`.
 Push your changes to CF.
 
 ## To Use
