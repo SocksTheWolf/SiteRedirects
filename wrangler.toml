@@ -7,7 +7,7 @@ workers_dev = false
 
 [[kv_namespaces]]
 binding = "REDIRECTS"
-id = "e68d94dae43b4c20bd3b87489e717d14"
+id = ""
 
 [vars]
 FALLBACK_URL = "https://www.twitch.tv/socksthewolf"
