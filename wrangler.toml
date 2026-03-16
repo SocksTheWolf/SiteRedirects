@@ -9,5 +9,9 @@ workers_dev = false
 binding = "REDIRECTS"
 id = ""
 
+[dev]
+ip = "127.0.0.1"
+
 [vars]
+# where / should navigate to
 FALLBACK_URL = "https://www.twitch.tv/socksthewolf"

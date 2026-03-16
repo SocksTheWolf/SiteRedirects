@@ -15,7 +15,12 @@ export default {
     // write the fallback url if location is null
     location ??= env.FALLBACK_URL;
 
+    // if the location still equals null, then error.
+    if (location === null || location === "") {
+      return new Response("Error: No fallback URL provided", {status: 404, headers: {"content-type": "text/plain"}});
+    }
+
     // Send the visitor to the new location
     return Response.redirect(location, 301);
-  },
+  }
 };
