@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "dev": "wrangler dev"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "devDependencies": {
-    "wrangler": "^4.75.0"
+    "wrangler": "^4.95.0"
   }
 }

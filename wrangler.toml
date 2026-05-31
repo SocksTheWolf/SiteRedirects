@@ -6,17 +6,13 @@ send_metrics = false
 workers_dev = false
 
 
-# Make sure to change these routes to the domain that you own to automatically hook it up to your domain on cloudflare
-routes = [
-  {
-    "pattern": "mydomain.com",
-    "custom_domain": true
-  },
-  {
-    "pattern": "www.mydomain.com",
-    "custom_domain": true
-  }
-]
+# If you are manually editing setting up this project,
+# then make sure to uncomment and change the routes below to the domain that you own.
+
+#routes = [
+#  { "pattern": "mydomain.com", "custom_domain": true},
+#  { "pattern": "www.mydomain.com","custom_domain": true }
+#]
 
 [[kv_namespaces]]
 binding = "REDIRECTS"
