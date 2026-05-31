@@ -16,7 +16,7 @@ workers_dev = false
 
 [[kv_namespaces]]
 binding = "REDIRECTS"
-id = ""
+id = "<YOUR_BINDING_ID>"
 
 # For developing on linux in testing.
 [dev]
