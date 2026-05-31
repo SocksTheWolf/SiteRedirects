@@ -5,13 +5,28 @@ preview_urls = false
 send_metrics = false
 workers_dev = false
 
+
+# Make sure to change these routes to the domain that you own to automatically hook it up to your domain on cloudflare
+routes = [
+  {
+    "pattern": "mydomain.com",
+    "custom_domain": true
+  },
+  {
+    "pattern": "www.mydomain.com",
+    "custom_domain": true
+  }
+]
+
 [[kv_namespaces]]
 binding = "REDIRECTS"
 id = ""
 
+# For developing on linux in testing.
 [dev]
 ip = "127.0.0.1"
 
 [vars]
-# where / should navigate to
-FALLBACK_URL = "https://www.twitch.tv/socksthewolf"
+# where / should navigate to this should always be filled out.
+# EX: FALLBACK_URL = "https://www.twitch.tv/socksthewolf"
+FALLBACK_URL = ""
