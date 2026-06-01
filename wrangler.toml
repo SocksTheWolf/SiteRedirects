@@ -5,6 +5,9 @@ preview_urls = false
 send_metrics = false
 workers_dev = false
 
+# For developing on linux in testing.
+[dev]
+ip = "127.0.0.1"
 
 # If you are manually editing setting up this project,
 # then make sure to uncomment and change the routes below to the domain that you own.
@@ -16,13 +19,11 @@ workers_dev = false
 
 [[kv_namespaces]]
 binding = "REDIRECTS"
+
+# If manually editing, make sure to rename this.
 id = "<YOUR_BINDING_ID>"
 
-# For developing on linux in testing.
-[dev]
-ip = "127.0.0.1"
-
 [vars]
-# where / should navigate to this should always be filled out.
-# EX: FALLBACK_URL = "https://www.twitch.tv/socksthewolf"
-FALLBACK_URL = ""
+# Where direct links to this domain should navigate to.
+# This should always be filled out.
+FALLBACK_URL = "https://www.twitch.tv/socksthewolf"
