@@ -12,10 +12,10 @@ ip = "127.0.0.1"
 # If you are manually editing setting up this project,
 # then make sure to uncomment and change the routes below to the domain that you own.
 
-#routes = [
+routes = [
 #  { "pattern": "mydomain.com", "custom_domain": true},
 #  { "pattern": "www.mydomain.com","custom_domain": true }
-#]
+]
 
 [[kv_namespaces]]
 binding = "REDIRECTS"

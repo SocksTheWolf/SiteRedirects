@@ -10,6 +10,8 @@ This method bypasses the limit of 10 URL redirect rules on CF. And is a bit easi
 
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/socksthewolf/SiteRedirects)
 
+**IMPORTANT**: Make sure to uncheck the option "Builds for non-production branches"
+
 ### Manually
 
 1. Clone this repository or use as a template
