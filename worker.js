@@ -6,7 +6,7 @@ export default {
     // Grab the last element in the array. This will either be a key or just a /
     // Trim any whitespace at all
     // Lowercase the result for consistency
-    const urlPath = pathname.split("/", 2).pop().trim().toLowerCase();
+    const urlPath = (pathname.length >= 1) ? pathname.split("/", 2).pop().trim().toLowerCase() : "";
     var location = null; // set this to null to handle fallbacks properly.
 
     // If we have a path given to us, we should look it up in the KV
