@@ -19,7 +19,7 @@ export default {
     location ??= env.FALLBACK_URL;
 
     // If we still have invalid data, then display an error
-    if (location === null || location === "" || location.isEmpty()) {
+    if (location === null || location === "") {
       return new Response("Error: No fallback URL provided", {status: 404, headers: {"content-type": "text/plain"}});
     }
 
