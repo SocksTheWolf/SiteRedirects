@@ -3,7 +3,7 @@
     "dev": "wrangler dev"
   },
   "devDependencies": {
-    "wrangler": "^4.125.0"
+    "wrangler": "^4.126.0"
   },
   "overrides": {
     "@actions/github": {
