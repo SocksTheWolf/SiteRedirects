@@ -3,7 +3,7 @@
     "dev": "wrangler dev"
   },
   "devDependencies": {
-    "wrangler": "^4.148.0"
+    "wrangler": "^4.149.0"
   },
   "overrides": {
     "@actions/github": {
@@ -11,9 +11,6 @@
     },
     "@actions/http-client": {
       "undici": "^7.29.1"
-    },
-    "miniflare": {
-      "sharp": "0.35.5"
     }
   }
 }
