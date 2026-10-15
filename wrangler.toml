@@ -2,15 +2,13 @@ name = "siteredirects"
 main = "worker.js"
 compatibility_date = "2025-08-21"
 preview_urls = false
-send_metrics = false
 workers_dev = false
-
-# For developing on linux in testing.
-[dev]
-ip = "127.0.0.1"
+send_metrics = false
+minify = true
 
 # If you are manually editing setting up this project,
 # then make sure to uncomment and change the routes below to the domain that you own.
+# Remove the # from any lines you edit
 
 routes = [
 #  { "pattern": "mydomain.com", "custom_domain": true},
@@ -19,11 +17,11 @@ routes = [
 
 [[kv_namespaces]]
 binding = "REDIRECTS"
-
-# If manually editing, make sure to rename this.
-id = "<YOUR_BINDING_ID>"
+# If manually editing, make sure to fill this out and uncomment it.
+# id = "<YOUR_BINDING_ID>"
+remote = true
 
 [vars]
 # Where direct links to this domain should navigate to.
 # This should always be filled out.
-FALLBACK_URL = "https://www.twitch.tv/socksthewolf"
+FALLBACK_URL = ""

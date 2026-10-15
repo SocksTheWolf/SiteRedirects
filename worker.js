@@ -1,5 +1,5 @@
 export default {
-  async fetch(request, env, ctx) {
+  async fetch(request, env, _ctx) {
     // Pull out the pathname of the request url. By default, pathname must always have at least one "/" character
     const {pathname} = new URL(request.url);
     // Grab the first two results from splitting the string by / characters
@@ -16,7 +16,7 @@ export default {
       location = await env.REDIRECTS.get(urlPath);
     }
     // write the fallback url if location is null
-    location ??= env.FALLBACK_URL;
+    location ??= env.FALLBACK_URL.trim();
 
     // If we still have invalid data, then display an error
     if (location === null || location === "") {
